@@ -2468,6 +2468,9 @@
       return round(r, r.e + DECIMAL_PLACES + 1, ROUNDING_MODE, m);
     };
 
+    P.copy = function () {
+      return new BigNumber(this);
+    };
 
     /*
      * Return a string representing the value of this BigNumber in exponential notation and

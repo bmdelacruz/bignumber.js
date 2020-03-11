@@ -1237,6 +1237,11 @@ export declare class BigNumber implements BigNumber.Instance {
   sqrt(): BigNumber;
 
   /**
+   * Creates a copy of the BigNumber.
+   */
+  copy(): BigNumber;
+
+  /**
    * Returns a string representing the value of this BigNumber in exponential notation rounded using
    * rounding mode `roundingMode` to `decimalPlaces` decimal places, i.e with one digit before the
    * decimal point and `decimalPlaces` digits after it.

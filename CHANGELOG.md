@@ -1,3 +1,8 @@
+#### 9.1.0
+* 11/03/2020
+* Added method `copy`.
+* Added tests for `copy` method.
+
 #### 9.0.0
 * 27/05/2019
 * For compatibility with legacy browsers, remove `Symbol` references.

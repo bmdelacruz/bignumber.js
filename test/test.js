@@ -28,6 +28,7 @@ console.log('\n Testing bignumber.js\n');
   'shiftedBy',
   'squareRoot',
   'sum',
+  'copy',
   'toExponential',
   'toFixed',
   'toFormat',
@@ -36,16 +37,16 @@ console.log('\n Testing bignumber.js\n');
   'toPrecision',
   'toString'
 ]
-.forEach(function (method) {
-  require('./methods/' + method);
-  passed += Test.result[0];
-  total += Test.result[1];
+  .forEach(function (method) {
+    require('./methods/' + method);
+    passed += Test.result[0];
+    total += Test.result[1];
 
-  // Reset BigNumber for each method tested?
-  //delete require.cache[require.resolve('../bignumber.js')];
-  //BigNumber = require('../bignumber');
-  //BigNumber.DEBUG = true;
-});
+    // Reset BigNumber for each method tested?
+    //delete require.cache[require.resolve('../bignumber.js')];
+    //BigNumber = require('../bignumber');
+    //BigNumber.DEBUG = true;
+  });
 
 time = process.hrtime(time);
 time = time[0] * 1e3 + (time[1] / 1e6 | 0);
